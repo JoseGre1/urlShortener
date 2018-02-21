@@ -1,8 +1,8 @@
 class Api::V1::UrlsController < Api::V1::BaseApiController
   def create
     @url = Url.new(url_params)
-    unless @url.save!
-      json_response(@url&.errors&.messages || {}, :unprocessable_entity)
+    unless @url.save
+      render json: { message: @url.errors.full_messages}, status: :unprocessable_entity
     end
   end
 
