@@ -1,5 +1,4 @@
 module ExceptionHandler
-
   extend ActiveSupport::Concern
 
   included do
@@ -8,7 +7,7 @@ module ExceptionHandler
 
   private
 
-  def four_hundred_four(e)
+  def four_hundred_four
     redirect_to "/404.html"
   end
 end
