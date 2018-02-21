@@ -91,3 +91,6 @@ Style/MixinUsage:
 
 Style/GuardClause:
   Enabled: false
+
+Style/RegexpLiteral:
+  Enabled: false

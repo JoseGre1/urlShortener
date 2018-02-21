@@ -6,8 +6,9 @@ class Url < ApplicationRecord
 
   after_create :encode_original
 
+  VALID_URL_REGEX = URI.regexp(%w[http https])
   validates :original, presence: true, allow_blank: false,
-                       format: { with: %r(/(http|https):\/\/|[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,6}(:[0-9]{1,5})?(\/.*)?/ix) }
+                       format: { with: VALID_URL_REGEX }
 
   private
 
