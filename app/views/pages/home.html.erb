@@ -1,1 +1,41 @@
-<%= javascript_pack_tag 'hello_react' %>
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 mx-auto">
+        <%= fa_stacked_icon t(:icon), base: "circle", class: "fa-2x" %>
+        <a class="navbar-brand" href="#"><%= t :app_name %></a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Masthead -->
+<header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5 text-shadow"><%= t("views.pages.home.title", app_name: t(:app_name)) %></h1>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <div id="urls"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Footer -->
+<footer class="footer bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+        <p class="text-muted small mb-4 mb-lg-0">&copy;
+          <%= "#{t(:app_name)} #{Time.current.year}. #{t("views.pages.home.copyright")}." %>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<%= javascript_pack_tag 'urls' %>
