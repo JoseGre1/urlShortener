@@ -3,10 +3,16 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "^3.2.2",
+    "axios": "^0.18.0",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.0",
+    "query-string": "^5.1.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-copy-to-clipboard": "^5.0.1",
+    "react-dom": "^16.2.0",
+    "react-notify-toast": "^0.4.0",
+    "react-router-dom": "^4.2.2",
+    "react-toaster-js": "^0.0.1"
   },
   "devDependencies": {
     "webpack-dev-server": "^2.11.1"
