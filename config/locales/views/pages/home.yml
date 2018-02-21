@@ -1,0 +1,6 @@
+en:
+  views:
+    pages:
+      home:
+        title: ! "Keep your tweets short and simple with %{app_name}"
+        copyright: "All Rights Reserved"

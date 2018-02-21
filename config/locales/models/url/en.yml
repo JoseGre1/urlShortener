@@ -1,0 +1,11 @@
+en:
+  activerecord:
+    attributes:
+      url:
+        original: "The URL"
+    errors:
+      models:
+        url:
+          attributes:
+            original:
+              invalid: "is not valid"
