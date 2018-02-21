@@ -22,3 +22,8 @@
 /node_modules
 yarn-debug.log*
 .yarn-integrity
+
+# Ignore local environmental variables
+.env
+# Ignore coverage folder
+coverage
